@@ -1,12 +1,6 @@
 # ReparaTech
 Evaluación Parcial 1 (30%)
 
-
-
-# ReparaTech
-
-
-
 # 1. Presentación de la empresa
 
   
