@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso taller - ReparaTech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>ReparaTech</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="seguimiento.html">Seguimiento</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="login.html">Acceso taller</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Acceso del personal</h2>
+      <p>Solo para técnicos, encargados y administradores del taller.</p>
+
+      <form id="loginForm" novalidate>
+        <div id="loginMsg" class="form-msg" role="status" aria-live="polite"></div>
+
+        <label>Ingresar como</label>
+        <div class="role-select">
+          <label><input type="radio" name="rol" value="panel-tecnico.html" checked> Técnico</label>
+          <label><input type="radio" name="rol" value="panel-encargado.html"> Encargado</label>
+          <label><input type="radio" name="rol" value="panel-admin.html"> Administrador</label>
+        </div>
+
+        <div class="campo">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" autocomplete="username">
+          <span class="error-msg" id="error-usuario"></span>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" autocomplete="current-password">
+          <span class="error-msg" id="error-clave"></span>
+        </div>
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      <p class="hint">
+        Demo del proyecto: valida usuario/contraseña y redirige al panel
+        del rol elegido (no hay backend real detrás todavía).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>ReparaTech - Santiago Centro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
